@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07090d">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<title>合肥晶算量子科技有限公司｜AI for Science × Computational Science</title>
+<meta name="description" content="合肥晶算量子科技有限公司聚焦 AI 项目与计算模拟，面向材料、化学、能源与环境研究提供 AI for Science 与多尺度科学计算支持。">
+</head>
+<body data-page="home">
+
+<header class="topbar" data-header>
+  <div class="shell topbar-inner">
+    <a class="brand" href="index.html" aria-label="晶算量子首页">
+      <span class="brand-symbol"><img src="assets/img/jingsuan-mark.png" alt=""></span>
+      <span class="brand-copy"><b>晶算量子</b><small>JINGSUAN QUANTUM</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="index.html" data-route="home">首页</a>
+      <a href="ai.html" data-route="ai">AI项目</a>
+      <a href="simulation.html" data-route="simulation">计算模拟</a>
+    </nav>
+    <button class="menu" type="button" aria-label="打开导航" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+<div class="progress"><span></span></div>
+<div class="cursor cursor-dot" aria-hidden="true"></div>
+<div class="cursor cursor-ring" aria-hidden="true"></div>
+
+<main>
+  <section class="hero">
+    <canvas id="quantum-canvas" class="full-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow glow-a"></div>
+    <div class="hero-glow glow-b"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="shell hero-shell">
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><span>JQ / 2026</span> SCIENTIFIC INTELLIGENCE COMPANY</div>
+        <h1 class="reveal">
+          <span class="display-small">WE COMPUTE</span>
+          <span class="display-large">WHAT MATTERS.</span>
+        </h1>
+        <p class="hero-cn reveal">用 <b>AI</b> 找到规律，用 <b>Simulation</b> 解释规律。<br>为材料、化学、能源与环境研究构建下一代科研计算工作流。</p>
+        <div class="hero-actions reveal">
+          <a class="btn primary magnetic" href="ai.html">AI Projects <b>↗</b></a>
+          <a class="btn secondary magnetic" href="simulation.html">Simulation <b>↗</b></a>
+        </div>
+      </div>
+
+      <div class="hero-object reveal">
+        <div class="quantum-object" data-tilt>
+          <div class="q-shell q1"></div>
+          <div class="q-shell q2"></div>
+          <div class="q-shell q3"></div>
+          <div class="q-shell q4"></div>
+          <div class="q-axis x"></div>
+          <div class="q-axis y"></div>
+          <div class="q-axis z"></div>
+          <div class="logo-core">
+            <div class="logo-light"></div>
+            <img src="assets/img/jingsuan-mark.png" alt="晶算量子标志">
+          </div>
+          <span class="orbit-dot d1"></span><span class="orbit-dot d2"></span><span class="orbit-dot d3"></span>
+        </div>
+        <div class="float-card fc-a"><small>ENGINE 01</small><b>AI PROJECTS</b><span>Predict · Explain · Automate</span></div>
+        <div class="float-card fc-b"><small>ENGINE 02</small><b>SIMULATION</b><span>DFT · MD · QC · COMSOL</span></div>
+      </div>
+    </div>
+
+    <div class="hero-foot shell">
+      <div class="hero-tech"><span>AI for Science</span><i></i><span>DFT</span><i></i><span>MD / AIMD</span><i></i><span>Quantum Chemistry</span><i></i><span>COMSOL</span></div>
+      <a class="scroll-link" href="#statement">SCROLL <b>↓</b></a>
+    </div>
+  </section>
+
+  <section class="statement" id="statement">
+    <div class="shell statement-shell">
+      <span class="section-code reveal">01 / POSITIONING</span>
+      <div class="statement-copy">
+        <p class="statement-line reveal">不是“多做几个计算”。</p>
+        <p class="statement-line reveal"><b>而是让科研问题进入一个更聪明的系统。</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="engines">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div><span class="section-code">02 / CORE ENGINES</span><h2>Two engines.<br><b>One scientific stack.</b></h2></div>
+        <p>AI 建立数据智能层，Simulation 建立物理与化学机理层；两者共同构成晶算量子的科研计算底座。</p>
+      </div>
+
+      <div class="engine-stage">
+        <a class="engine-panel ai-panel magnetic-card reveal" href="ai.html">
+          <canvas class="panel-canvas" data-scene="ai"></canvas>
+          <div class="panel-top"><span>01</span><b>INTELLIGENCE</b></div>
+          <div class="panel-main">
+            <small>AI PROJECTS</small>
+            <h3>AI 项目</h3>
+            <p>AI for Science、科研智能体、小样本建模、RAG、多模态科研数据与优化。</p>
+          </div>
+          <div class="panel-tags"><span>AI4S</span><span>Agent</span><span>Small-data ML</span></div>
+          <div class="panel-arrow">↗</div>
+        </a>
+
+        <a class="engine-panel sim-panel magnetic-card reveal" href="simulation.html">
+          <canvas class="panel-canvas" data-scene="sim"></canvas>
+          <div class="panel-top"><span>02</span><b>PHYSICS</b></div>
+          <div class="panel-main">
+            <small>COMPUTATIONAL SCIENCE</small>
+            <h3>计算模拟</h3>
+            <p>DFT、MD、AIMD、量子化学、COMSOL 与 Quantum-Classical R&D。</p>
+          </div>
+          <div class="panel-tags"><span>DFT / MD</span><span>QC</span><span>Multiphysics</span></div>
+          <div class="panel-arrow">↗</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-os">
+    <div class="shell os-shell">
+      <div class="os-sticky reveal">
+        <span class="section-code">03 / RESEARCH OS</span>
+        <h2>科研计算，<br><b>像一个操作系统。</b></h2>
+        <p>把问题定义、数据、AI、模拟、验证与解释组织成一条可以追踪、复核、迭代的链路。</p>
+      </div>
+
+      <div class="os-console reveal">
+        <div class="console-head">
+          <div class="traffic"><i></i><i></i><i></i></div>
+          <span>JQ / RESEARCH-OS</span>
+          <b>LIVE</b>
+        </div>
+        <div class="console-body">
+          <div class="console-nav">
+            <button class="console-tab active" data-target="question">01 / QUESTION</button>
+            <button class="console-tab" data-target="data">02 / DATA</button>
+            <button class="console-tab" data-target="compute">03 / COMPUTE</button>
+            <button class="console-tab" data-target="validate">04 / VALIDATE</button>
+            <button class="console-tab" data-target="insight">05 / INSIGHT</button>
+          </div>
+          <div class="console-screen">
+            <div class="console-panel active" data-panel="question">
+              <div class="terminal">
+                <span><i>01</i> define.scientific_question()</span>
+                <span><i>02</i> map.targets_constraints_variables()</span>
+                <span><i>03</i> select.ai_or_physics_path()</span>
+                <b>→ research problem structured</b>
+              </div>
+            </div>
+            <div class="console-panel" data-panel="data">
+              <div class="terminal">
+                <span><i>01</i> audit.dataset_and_structure()</span>
+                <span><i>02</i> construct.descriptors_or_models()</span>
+                <span><i>03</i> verify.data_quality()</span>
+                <b>→ scientific input ready</b>
+              </div>
+            </div>
+            <div class="console-panel" data-panel="compute">
+              <div class="terminal">
+                <span><i>01</i> run.ai_prediction()</span>
+                <span><i>02</i> run.multiscale_simulation()</span>
+                <span><i>03</i> integrate.data_and_mechanism()</span>
+                <b>→ evidence generated</b>
+              </div>
+            </div>
+            <div class="console-panel" data-panel="validate">
+              <div class="terminal">
+                <span><i>01</i> check.convergence()</span>
+                <span><i>02</i> compare.baseline_and_benchmark()</span>
+                <span><i>03</i> quantify.uncertainty()</span>
+                <b>→ quality control passed</b>
+              </div>
+            </div>
+            <div class="console-panel" data-panel="insight">
+              <div class="terminal">
+                <span><i>01</i> explain.key_factors()</span>
+                <span><i>02</i> assemble.figures_and_evidence()</span>
+                <span><i>03</i> return.scientific_insight()</span>
+                <b>→ answer ready</b>
+              </div>
+            </div>
+          </div>
+          <div class="console-status">
+            <div><small>MODE</small><strong>HYBRID</strong></div>
+            <div><small>STATUS</small><strong>ONLINE</strong></div>
+            <div><small>FOCUS</small><strong>SCIENCE</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stack-section">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div><span class="section-code">04 / CAPABILITY STACK</span><h2>From data<br><b>to mechanism.</b></h2></div>
+      </div>
+      <div class="stack-table reveal">
+        <div class="stack-row"><b>AI</b><span>AI for Science</span><span>Scientific Agent</span><span>RAG / Knowledge</span><span>Multimodal</span></div>
+        <div class="stack-row"><b>SIM</b><span>DFT</span><span>MD / AIMD</span><span>Quantum Chemistry</span><span>COMSOL</span></div>
+        <div class="stack-row"><b>R&D</b><span>VQE</span><span>Quantum Circuit</span><span>QML</span><span>Hybrid Workflow</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="finale">
+    <canvas id="final-canvas" class="full-canvas" aria-hidden="true"></canvas>
+    <div class="shell finale-inner reveal">
+      <img src="assets/img/jingsuan-mark.png" alt="">
+      <span>JINGSUAN QUANTUM</span>
+      <h2>Build intelligence.<br><b>Compute reality.</b></h2>
+      <div class="hero-actions center">
+        <a class="btn primary magnetic" href="ai.html">AI Projects</a>
+        <a class="btn secondary magnetic" href="simulation.html">Simulation</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/jingsuan-mark.png" alt="">
+      <div><b>合肥晶算量子科技有限公司</b><span>Hefei Jingsuan Quantum Technology Co., Ltd.</span></div>
+    </div>
+    <div class="footer-links"><a href="ai.html">AI项目</a><a href="simulation.html">计算模拟</a></div>
+    <div class="footer-copy">© <span data-year></span> Jingsuan Quantum</div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07090d">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<title>计算模拟｜合肥晶算量子科技有限公司</title>
+<meta name="description" content="晶算量子计算模拟覆盖 DFT、MD、AIMD、量子化学、COMSOL 以及量子–经典混合计算研发。">
+</head>
+<body data-page="simulation">
+
+<header class="topbar" data-header>
+  <div class="shell topbar-inner">
+    <a class="brand" href="index.html" aria-label="晶算量子首页">
+      <span class="brand-symbol"><img src="assets/img/jingsuan-mark.png" alt=""></span>
+      <span class="brand-copy"><b>晶算量子</b><small>JINGSUAN QUANTUM</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="index.html" data-route="home">首页</a>
+      <a href="ai.html" data-route="ai">AI项目</a>
+      <a href="simulation.html" data-route="simulation">计算模拟</a>
+    </nav>
+    <button class="menu" type="button" aria-label="打开导航" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+<div class="progress"><span></span></div>
+<div class="cursor cursor-dot" aria-hidden="true"></div>
+<div class="cursor cursor-ring" aria-hidden="true"></div>
+
+<main>
+  <section class="subhero sim-subhero">
+    <canvas id="quantum-canvas" class="full-canvas" aria-hidden="true"></canvas>
+    <div class="shell subhero-shell">
+      <span class="section-code reveal">ENGINE / 02</span>
+      <h1 class="reveal">Computational Science<br><b>across multiple scales.</b></h1>
+      <p class="reveal">从电子结构到分子动态，再到连续介质，用合适的方法回答合适尺度的科学问题。</p>
+      <div class="subhero-tags reveal"><span>Electronic</span><i></i><span>Molecular</span><i></i><span>Continuum</span><i></i><span>Hybrid-Q</span></div>
+    </div>
+  </section>
+
+  <section class="modules">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div><span class="section-code">COMPUTATIONAL STACK</span><h2>Five core methods.<br><b>One R&D frontier.</b></h2></div>
+      </div>
+      <div class="module-grid">
+        <article class="module-card reveal"><span>S01</span><h3>DFT</h3><p>结构优化、电子结构、吸附与结合、电荷分析、反应路径与机理。</p><div><i>DOS / PDOS</i><i>Band</i><i>Bader</i><i>NEB</i></div></article>
+        <article class="module-card reveal"><span>S02</span><h3>MD</h3><p>扩散、界面、溶剂化、构象变化、氢键与动态稳定性。</p><div><i>RDF</i><i>MSD</i><i>Diffusion</i><i>Free Energy</i></div></article>
+        <article class="module-card reveal"><span>S03</span><h3>AIMD</h3><p>在电子结构精度下探索有限温度动态、反应与界面演化。</p><div><i>Trajectory</i><i>Reaction</i><i>Finite-T</i></div></article>
+        <article class="module-card reveal"><span>S04</span><h3>Quantum Chemistry</h3><p>分子结构、轨道、电荷、振动、光谱、激发态与反应性质分析。</p><div><i>HOMO/LUMO</i><i>NBO</i><i>IR/Raman</i><i>TD-DFT</i></div></article>
+        <article class="module-card reveal"><span>S05</span><h3>COMSOL</h3><p>传质、流体、热、电化学与多物理场连续介质模拟。</p><div><i>CFD</i><i>Heat</i><i>Mass Transfer</i><i>Electrochemistry</i></div></article>
+        <article class="module-card highlight-card reveal"><span>R&D</span><h3>Hybrid Quantum</h3><p>探索 VQE、量子线路、QML 与经典科学计算的协同工作流。</p><div><i>VQE</i><i>Quantum Circuit</i><i>QML</i><i>Benchmark</i></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="scales">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div><span class="section-code">MULTISCALE VIEW</span><h2>Different scales.<br><b>Different physics.</b></h2></div>
+      </div>
+      <div class="scale-line reveal">
+        <div><span>10⁻¹⁰ m</span><b>Electronic</b><small>DFT / Quantum Chemistry</small></div>
+        <i></i>
+        <div><span>10⁻⁹–10⁻⁷ m</span><b>Molecular</b><small>MD / AIMD</small></div>
+        <i></i>
+        <div><span>10⁻⁶–10⁻² m</span><b>Continuum</b><small>COMSOL / Multiphysics</small></div>
+        <i></i>
+        <div><span>R&D</span><b>Hybrid</b><small>Quantum × Classical</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="next">
+    <div class="shell next-inner reveal"><span>BACK ENGINE / 01</span><a href="ai.html">AI Projects ↗</a></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/jingsuan-mark.png" alt="">
+      <div><b>合肥晶算量子科技有限公司</b><span>Hefei Jingsuan Quantum Technology Co., Ltd.</span></div>
+    </div>
+    <div class="footer-links"><a href="ai.html">AI项目</a><a href="simulation.html">计算模拟</a></div>
+    <div class="footer-copy">© <span data-year></span> Jingsuan Quantum</div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
