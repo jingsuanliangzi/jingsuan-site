@@ -1,240 +1,311 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07090d">
-<meta name="robots" content="index,follow">
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="stylesheet" href="assets/css/style.css">
-
-<title>合肥晶算量子科技有限公司｜AI for Science × Computational Science</title>
-<meta name="description" content="合肥晶算量子科技有限公司聚焦 AI 项目与计算模拟，面向材料、化学、能源与环境研究提供 AI for Science 与多尺度科学计算支持。">
+<meta name="theme-color" content="#0756a3">
+<title>合肥晶算量子科技有限公司｜Quantum Computing & AI for Scientific Discovery</title>
+<meta name="description" content="合肥晶算量子科技有限公司（Jingsuan Quantum），面向材料、化学、能源与环境领域的量子计算、AI for Science 与科学计算模拟技术公司。">
+<link href="assets/images/icon-64.png" rel="icon" type="image/png">
+<link href="assets/css/site.css" rel="stylesheet">
+<link href="assets/css/hqt-redesign.css" rel="stylesheet">
+<link href="assets/css/unified-shell.css" rel="stylesheet">
 </head>
-<body data-page="home">
+<body class="homepage-redone" id="top">
+<a class="skip-link" href="#main">跳到主要内容</a>
 
-<header class="topbar" data-header>
-  <div class="shell topbar-inner">
-    <a class="brand" href="index.html" aria-label="晶算量子首页">
-      <span class="brand-symbol"><img src="assets/img/jingsuan-mark.png" alt=""></span>
-      <span class="brand-copy"><b>晶算量子</b><small>JINGSUAN QUANTUM</small></span>
+<header class="site-header-unified" id="site-header">
+  <div class="unified-nav-wrap">
+    <a aria-label="合肥晶算量子科技有限公司首页" class="unified-brand" href="index.html">
+      <img alt="合肥晶算量子科技有限公司" src="assets/images/logo-wordmark.png">
     </a>
-    <nav class="nav" aria-label="主导航">
-      <a href="index.html" data-route="home">首页</a>
-      <a href="ai.html" data-route="ai">AI项目</a>
-      <a href="simulation.html" data-route="simulation">计算模拟</a>
+    <nav aria-label="主导航" class="unified-site-nav">
+      <a class="active" href="index.html">首页</a>
+      <a class="" href="board/ai-projects.html">AI项目</a>
+      <a class="" href="board/computational-simulation.html">计算模拟</a>
+      <a class="" href="index.html#about-company">关于晶算</a>
     </nav>
-    <button class="menu" type="button" aria-label="打开导航" aria-expanded="false"><i></i><i></i></button>
+    <div class="unified-actions">
+      <a class="unified-consult unified-consult-tech" href="#" data-project-trigger data-modal-category="AI 项目咨询" data-modal-title="AI 项目咨询" data-modal-desc="围绕 AI for Science、科研智能体、知识库、预测模型与多模态分析，欢迎扫码或邮件提交项目需求。" data-modal-doc="customer-portal/templates/JSLZ-AI-Project-Requirement-Form.docx"><span>Σ</span><b>AI项目</b></a>
+      <a class="unified-consult unified-consult-admin" href="#" data-project-trigger data-modal-category="计算模拟咨询" data-modal-title="计算模拟咨询" data-modal-desc="围绕 DFT、MD、AIMD、量子化学、CFD 与多物理场模拟，欢迎扫码或邮件提交项目需求。" data-modal-doc="customer-portal/templates/JSLZ-Simulation-Requirement-Form.docx"><span>◇</span><b>计算模拟</b></a>
+    </div>
   </div>
 </header>
-<div class="progress"><span></span></div>
-<div class="cursor cursor-dot" aria-hidden="true"></div>
-<div class="cursor cursor-ring" aria-hidden="true"></div>
+<section class="positioning-band" aria-label="公司定位">
+  <div class="container positioning-inner">
+    <div class="positioning-copy">
+      <span class="positioning-kicker">JINGSUAN QUANTUM</span>
+      <h1>Quantum Computing <em>&amp;</em> AI for Scientific Discovery</h1>
+      <p>面向材料、化学、能源与环境领域的量子计算与 <b>AI for Science</b> 技术公司。</p>
+      <div class="positioning-pills"><span>Quantum Computing</span><span>AI for Science</span><span>Scientific Simulation</span><span>Materials · Chemistry · Energy · Environment</span></div>
+      <div class="hero-cta-row"><a class="button" href="board/ai-projects.html">查看 AI 项目</a><a class="button hero-ghost-btn" href="board/computational-simulation.html">查看计算模拟</a><a class="button hero-outline-btn" href="#" data-project-trigger data-modal-category="商务咨询" data-modal-title="商务咨询" data-modal-desc="欢迎通过微信二维码或邮箱联系晶算量子，我们将根据研究方向与任务需求提供初步方案。" data-modal-doc="customer-portal/templates/JSLZ-AI-Project-Requirement-Form.docx">发起咨询</a></div>
+      <div class="hero-metrics"><div><strong>3</strong><span>核心方向</span></div><div><strong>4</strong><span>应用领域</span></div><div><strong>2</strong><span>标准需求表</span></div><div><strong>1</strong><span>量子 × AI 协同平台</span></div></div>
+    </div>
+    <div class="positioning-orb" aria-hidden="true"><i></i><i></i><i></i><b>Q</b></div>
+  </div>
+</section>
 
-<main>
-  <section class="hero">
-    <canvas id="quantum-canvas" class="full-canvas" aria-hidden="true"></canvas>
-    <div class="hero-glow glow-a"></div>
-    <div class="hero-glow glow-b"></div>
-    <div class="hero-grid-bg"></div>
-    <div class="shell hero-shell">
-      <div class="hero-copy">
-        <div class="eyebrow reveal"><span>JQ / 2026</span> SCIENTIFIC INTELLIGENCE COMPANY</div>
-        <h1 class="reveal">
-          <span class="display-small">WE COMPUTE</span>
-          <span class="display-large">WHAT MATTERS.</span>
-        </h1>
-        <p class="hero-cn reveal">用 <b>AI</b> 找到规律，用 <b>Simulation</b> 解释规律。<br>为材料、化学、能源与环境研究构建下一代科研计算工作流。</p>
-        <div class="hero-actions reveal">
-          <a class="btn primary magnetic" href="ai.html">AI Projects <b>↗</b></a>
-          <a class="btn secondary magnetic" href="simulation.html">Simulation <b>↗</b></a>
-        </div>
+<main id="main">
+
+<section class="section section-lite business-matrix-section">
+  <div class="container">
+    <div class="section-title-row">
+      <div><span class="section-en">BUSINESS MATRIX</span><h2>业务矩阵</h2></div>
+      <p>以量子计算、AI for Science 与科学计算模拟为技术主轴，同时构建标准化项目承接与交付能力。</p>
+    </div>
+    <div class="business-matrix-grid">
+      <article class="business-matrix-card"><span>01</span><h3>Quantum Layer</h3><p>围绕量子算法、量子化学、量子启发式优化与量子–经典混合计算，形成前沿技术储备。</p></article>
+      <article class="business-matrix-card"><span>02</span><h3>AI Layer</h3><p>围绕科研预测、候选筛选、知识工作流、科研智能体与多模态分析，提升科研发现效率。</p></article>
+      <article class="business-matrix-card"><span>03</span><h3>Simulation Layer</h3><p>围绕 DFT、MD、AIMD、量子化学、CFD 与多物理场仿真，形成可复用的科学计算能力栈。</p></article>
+      <article class="business-matrix-card"><span>04</span><h3>Delivery Layer</h3><p>围绕标准需求表、项目评估、过程沟通与结果交付，打造更规范的企业化服务流程。</p></article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-lite company-core-section">
+  <div class="container">
+    <div class="section-title-row company-core-title">
+      <div><span class="section-en">COMPANY POSITIONING</span><h2>三大核心方向</h2></div>
+      <p>以量子计算、AI for Science 和多尺度科学计算为核心，服务科研发现与技术研发。</p>
+    </div>
+    <div class="company-core-grid">
+      <article class="company-core-card">
+        <span>01</span>
+        <h3>量子计算</h3>
+        <p>围绕量子算法、量子化学、量子启发式优化与量子–经典混合计算，探索面向科研问题的计算新范式。</p>
+        <b>Quantum Computing</b>
+      </article>
+      <article class="company-core-card">
+        <span>02</span>
+        <h3>AI for Science</h3>
+        <p>构建面向材料、化学、能源与环境领域的预测、筛选、科研智能体与知识工作流系统。</p>
+        <b>AI for Scientific Discovery</b>
+      </article>
+      <article class="company-core-card">
+        <span>03</span>
+        <h3>科学计算模拟</h3>
+        <p>提供 DFT、MD、AIMD、量子化学、CFD 与多物理场模拟，形成数据驱动与机理计算协同体系。</p>
+        <b>Scientific Simulation</b>
+      </article>
+    </div>
+    <div class="company-scope-strip"><span>应用领域</span><a href="board/ai-projects.html">材料</a><a href="board/ai-projects.html">化学</a><a href="board/ai-projects.html">能源</a><a href="board/ai-projects.html">环境</a><a href="board/computational-simulation.html">量子化学</a><a href="board/computational-simulation.html">多尺度模拟</a></div>
+  </div>
+</section>
+
+
+<section class="section section-lite brand-strength-section">
+  <div class="container">
+    <div class="section-title-row">
+      <div><span class="section-en">WHY JINGSUAN QUANTUM</span><h2>为什么选择晶算量子</h2></div>
+      <p>从品牌表达、业务结构到客户转化路径，进一步向“真正公司官网”靠拢。</p>
+    </div>
+    <div class="brand-strength-grid">
+      <article class="brand-strength-card"><span>01</span><h3>公司化品牌表达</h3><p>以明确定位、统一视觉、标准资料与商务咨询入口，形成完整的企业官网形象，而不是单纯的项目清单页。</p></article>
+      <article class="brand-strength-card"><span>02</span><h3>量子 × AI × 模拟协同</h3><p>聚焦量子计算、AI for Science 与科学计算模拟三条主线，体现技术公司的业务结构与发展方向。</p></article>
+      <article class="brand-strength-card"><span>03</span><h3>标准化项目承接流程</h3><p>围绕需求收集、技术评估、任务执行与交付支持，形成更规范的项目承接与沟通方式。</p></article>
+      <article class="brand-strength-card"><span>04</span><h3>面向科研与研发场景</h3><p>服务材料、化学、能源与环境相关研究与研发需求，兼顾学术问题与工程应用的表达逻辑。</p></article>
+    </div>
+  </div>
+</section>
+<section class="section company-solution-section">
+  <div class="container">
+    <div class="section-title-row">
+      <div><span class="section-en">APPLICATION SCENARIOS</span><h2>应用场景</h2></div>
+      <p>围绕重点行业场景组织官网内容，使网站更接近正式科技公司的业务展示方式。</p>
+    </div>
+    <div class="solution-grid">
+      <article class="solution-card"><span>Materials</span><h3>材料研发</h3><p>支持材料筛选、结构–性能关系分析、界面机理研究与多尺度模拟。</p></article>
+      <article class="solution-card"><span>Chemistry</span><h3>化学研究</h3><p>支持分子设计、反应机理、量子化学分析、知识工作流与智能预测。</p></article>
+      <article class="solution-card"><span>Energy</span><h3>能源技术</h3><p>支持催化、电池、电解液、储能与传质传热相关计算与建模任务。</p></article>
+      <article class="solution-card"><span>Environment</span><h3>环境与过程</h3><p>支持污染控制、界面行为、膜过程、环境材料及相关过程模拟与 AI 分析。</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section hqt-capability-section hqt-capability-ai">
+<div class="container">
+<div class="hqt-capability-head"><div><span class="section-en">CORE CAPABILITY</span><h1>AI项目</h1></div></div>
+<div class="hqt-feature-grid">
+<article class="ai-showcase-card hqt-feature-card">
+<a class="ai-showcase-media" href="board/ai-projects.html#ai-001"><img src="assets/images/original/ai-candidate-screening-cover.jpg" alt="候选分子与材料智能筛选"></a>
+<div class="ai-showcase-copy"><span>AI 材料筛选</span><h3><a href="board/ai-projects.html#ai-001">候选分子与材料智能筛选</a></h3><p>融合结构描述符、文献知识、约束条件与预测模型，形成候选材料筛选和排序流程。</p><div class="ai-showcase-footer"><div class="ai-showcase-tags"><span>筛选</span><span>排序</span><span>解释</span></div><a href="board/ai-projects.html#ai-001">查看详情 →</a></div></div>
+</article>
+<article class="ai-showcase-card hqt-feature-card">
+<a class="ai-showcase-media" href="board/ai-projects.html#ai-002"><img src="assets/images/original/ai-agent-cover.png" alt="科研智能体与知识工作流"></a>
+<div class="ai-showcase-copy"><span>AI 科研智能体</span><h3><a href="board/ai-projects.html#ai-002">科研智能体与知识工作流</a></h3><p>面向检索、数据处理、模型调用和结果汇总，搭建面向科研任务的 Agent 工作流。</p><div class="ai-showcase-footer"><div class="ai-showcase-tags"><span>Agent</span><span>RAG</span><span>自动化</span></div><a href="board/ai-projects.html#ai-002">查看详情 →</a></div></div>
+</article>
+<article class="ai-showcase-card hqt-feature-card">
+<a class="ai-showcase-media" href="board/ai-projects.html#ai-003"><img src="assets/images/original/ai-process-cover.png" alt="配方工艺与性能预测"></a>
+<div class="ai-showcase-copy"><span>AI 工艺优化</span><h3><a href="board/ai-projects.html#ai-003">配方、工艺与性能预测</a></h3><p>围绕配方比例、工艺参数和目标性能建立预测模型，支持小样本建模、多目标优化与推荐。</p><div class="ai-showcase-footer"><div class="ai-showcase-tags"><span>配方</span><span>工艺</span><span>优化</span></div><a href="board/ai-projects.html#ai-003">查看详情 →</a></div></div>
+</article>
+</div>
+<div class="hqt-more-strip"><span>更多 AI 项目</span><a href="board/ai-projects.html#ai-004">科研知识库与 RAG</a><a href="board/ai-projects.html#ai-005">多模态数据分析</a><a href="board/ai-projects.html#ai-006">机器学习预测</a><a href="board/ai-projects.html#ai-007">实验设计与多目标优化</a><a href="board/ai-projects.html#ai-008">科研智能体开发</a><a href="board/ai-projects.html#ai-009">定制化 AI 项目</a></div>
+</div>
+</section>
+
+<section class="section hqt-capability-section hqt-capability-calc">
+<div class="container">
+<div class="hqt-capability-head"><div><span class="section-en">02 SIMULATION</span><h2>计算模拟</h2></div></div>
+<div class="hqt-feature-grid">
+<article class="ai-showcase-card hqt-feature-card hqt-card-board-calc">
+<a class="ai-showcase-media" href="board/computational-simulation.html#cfd"><img src="assets/images/original/04-cfd.webp" alt="计算流体力学"></a>
+<div class="ai-showcase-copy"><span>计算流体力学</span><h3><a href="board/computational-simulation.html#cfd">计算流体力学定制</a></h3><p>面向流场、传热、传质与多相过程，交付模型、边界条件、场分布结果及分析说明。</p><div class="ai-showcase-footer"><div class="ai-showcase-tags"><span>建模</span><span>计算</span><span>结果图</span></div><a href="board/computational-simulation.html#cfd">查看详情 →</a></div></div>
+</article>
+<article class="ai-showcase-card hqt-feature-card hqt-card-board-calc">
+<a class="ai-showcase-media" href="board/computational-simulation.html#dft"><img src="assets/images/original/05-dft.webp" alt="第一性原理计算"></a>
+<div class="ai-showcase-copy"><span>第一性原理计算</span><h3><a href="board/computational-simulation.html#dft">第一性原理计算定制</a></h3><p>覆盖结构优化、吸附能、能带、态密度、电荷与反应路径等电子结构计算。</p><div class="ai-showcase-footer"><div class="ai-showcase-tags"><span>DFT</span><span>电子结构</span><span>机理</span></div><a href="board/computational-simulation.html#dft">查看详情 →</a></div></div>
+</article>
+<article class="ai-showcase-card hqt-feature-card hqt-card-board-calc">
+<a class="ai-showcase-media" href="board/computational-simulation.html#md"><img src="assets/images/original/06-md-aimd.webp" alt="分子动力学与AIMD"></a>
+<div class="ai-showcase-copy"><span>分子动力学</span><h3><a href="board/computational-simulation.html#md">分子动力学与 AIMD 定制</a></h3><p>覆盖界面行为、扩散、吸附、溶剂化和动态稳定性，交付轨迹、统计曲线与构型图。</p><div class="ai-showcase-footer"><div class="ai-showcase-tags"><span>MD</span><span>AIMD</span><span>轨迹</span></div><a href="board/computational-simulation.html#md">查看详情 →</a></div></div>
+</article>
+</div>
+<div class="hqt-more-strip"><span>更多计算方向</span><a href="board/computational-simulation.html#cfd">计算流体力学</a><a href="board/computational-simulation.html#dft">第一性原理计算</a><a href="board/computational-simulation.html#md">分子动力学</a><a href="board/computational-simulation.html#comsol">多物理场与有限元仿真</a><a href="board/computational-simulation.html#qc">量子化学与分子计算</a><a href="board/computational-simulation.html#hybrid">量子–经典混合研发</a></div>
+</div>
+</section>
+
+
+<section class="section section-lite workflow-section">
+  <div class="container">
+    <div class="section-title-row">
+      <div><span class="section-en">SERVICE WORKFLOW</span><h2>服务流程</h2></div>
+      <p>采用更企业化的信息组织方式，清晰说明从咨询到交付的完整路径。</p>
+    </div>
+    <div class="workflow-grid">
+      <article class="workflow-card"><span>01</span><h3>需求沟通</h3><p>围绕研究目标、样本类型、计算问题或 AI 任务进行初步沟通。</p></article>
+      <article class="workflow-card"><span>02</span><h3>技术评估</h3><p>结合数据条件、模型路线与任务边界，形成可执行的技术方案。</p></article>
+      <article class="workflow-card"><span>03</span><h3>执行交付</h3><p>根据项目内容开展建模、计算、分析与结果整理，形成标准化交付。</p></article>
+      <article class="workflow-card"><span>04</span><h3>持续支持</h3><p>针对后续问题、补充分析与下一阶段项目，提供持续沟通与协同支持。</p></article>
+    </div>
+  </div>
+</section>
+<section class="section about-company-section" id="about-company">
+  <div class="container about-company-wrap">
+    <div class="about-company-copy">
+      <span class="section-en">ABOUT COMPANY</span>
+      <h2>关于晶算量子</h2>
+      <p><strong>合肥晶算量子科技有限公司（Jingsuan Quantum）</strong>，定位为面向材料、化学、能源与环境领域的量子计算、AI for Science 与科学计算模拟技术公司。</p>
+      <p>公司围绕量子计算、AI for Scientific Discovery 与科学计算模拟构建业务体系，强调算法、模型、机理与数据协同，致力于服务科研发现与技术研发。</p>
+    </div>
+    <div class="about-company-panel">
+      <div><strong>公司名称</strong><span>合肥晶算量子科技有限公司</span></div>
+      <div><strong>英文定位</strong><span>Quantum Computing &amp; AI for Scientific Discovery</span></div>
+      <div><strong>统一社会信用代码</strong><span>91340100MA8QMRPH71</span></div>
+      <div><strong>地址</strong><span>安徽省合肥市经济技术开发区</span></div>
+      <div><strong>邮箱</strong><span><a href="mailto:jingsuanliangzi@163.com">jingsuanliangzi@163.com</a></span></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section corporate-cta-section">
+  <div class="container">
+    <div class="corporate-cta-card">
+      <div>
+        <span class="section-en">START A PROJECT</span>
+        <h2>从项目需求到技术交付，构建更完整的合作路径</h2>
+        <p>如果你正在推进材料、化学、能源或环境领域的科研问题，欢迎通过 AI 项目或计算模拟需求表发起沟通。</p>
       </div>
-
-      <div class="hero-object reveal">
-        <div class="quantum-object" data-tilt>
-          <div class="q-shell q1"></div>
-          <div class="q-shell q2"></div>
-          <div class="q-shell q3"></div>
-          <div class="q-shell q4"></div>
-          <div class="q-axis x"></div>
-          <div class="q-axis y"></div>
-          <div class="q-axis z"></div>
-          <div class="logo-core">
-            <div class="logo-light"></div>
-            <img src="assets/img/jingsuan-mark.png" alt="晶算量子标志">
-          </div>
-          <span class="orbit-dot d1"></span><span class="orbit-dot d2"></span><span class="orbit-dot d3"></span>
-        </div>
-        <div class="float-card fc-a"><small>ENGINE 01</small><b>AI PROJECTS</b><span>Predict · Explain · Automate</span></div>
-        <div class="float-card fc-b"><small>ENGINE 02</small><b>SIMULATION</b><span>DFT · MD · QC · COMSOL</span></div>
+      <div class="corporate-cta-actions">
+        <a class="button" href="#" data-project-trigger data-modal-category="项目咨询" data-modal-title="发起项目咨询" data-modal-desc="欢迎通过微信二维码或邮箱联系晶算量子，我们将基于项目目标、数据条件和技术路线提供初步建议。" data-modal-doc="customer-portal/templates/JSLZ-AI-Project-Requirement-Form.docx">立即咨询</a>
+        <a class="button hero-ghost-btn" href="customer-portal/templates/JSLZ-Simulation-Requirement-Form.docx" download>下载需求表</a>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="hero-foot shell">
-      <div class="hero-tech"><span>AI for Science</span><i></i><span>DFT</span><i></i><span>MD / AIMD</span><i></i><span>Quantum Chemistry</span><i></i><span>COMSOL</span></div>
-      <a class="scroll-link" href="#statement">SCROLL <b>↓</b></a>
+<section class="section section-lite downloads-section">
+  <div class="container">
+    <div class="section-title-row">
+      <div><span class="section-en">STANDARD DOCUMENTS</span><h2>标准资料下载</h2></div>
+      <p>保留现有成熟模板，便于客户快速填写 AI 项目与计算模拟需求。</p>
     </div>
-  </section>
-
-  <section class="statement" id="statement">
-    <div class="shell statement-shell">
-      <span class="section-code reveal">01 / POSITIONING</span>
-      <div class="statement-copy">
-        <p class="statement-line reveal">不是“多做几个计算”。</p>
-        <p class="statement-line reveal"><b>而是让科研问题进入一个更聪明的系统。</b></p>
-      </div>
+    <div class="downloads-grid">
+      <article class="download-card">
+        <span>AI PROJECT FORM</span>
+        <h3>AI 项目需求表</h3>
+        <p>适用于机器学习建模、科研智能体、知识库与多模态数据分析项目。</p>
+        <a class="button" href="customer-portal/templates/JSLZ-AI-Project-Requirement-Form.docx" download>下载 Word 表单</a><a class="download-consult-link" href="#" data-project-trigger data-modal-category="资料下载咨询" data-modal-title="资料下载与项目咨询" data-modal-desc="如需进一步沟通项目背景、任务边界与交付方式，可通过弹窗中的微信二维码或邮箱联系晶算量子。" data-modal-doc="customer-portal/templates/JSLZ-Simulation-Requirement-Form.docx">需要项目咨询 →</a><a class="download-consult-link" href="#" data-project-trigger data-modal-category="资料下载咨询" data-modal-title="资料下载与项目咨询" data-modal-desc="如需进一步沟通项目背景、任务边界与交付方式，可通过弹窗中的微信二维码或邮箱联系晶算量子。" data-modal-doc="customer-portal/templates/JSLZ-AI-Project-Requirement-Form.docx">需要项目咨询 →</a>
+      </article>
+      <article class="download-card">
+        <span>SIMULATION FORM</span>
+        <h3>计算模拟需求表</h3>
+        <p>适用于第一性原理、分子动力学、量子化学、CFD 与多物理场仿真项目。</p>
+        <a class="button" href="customer-portal/templates/JSLZ-Simulation-Requirement-Form.docx" download>下载 Word 表单</a>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="engines">
-    <div class="shell">
-      <div class="section-head reveal">
-        <div><span class="section-code">02 / CORE ENGINES</span><h2>Two engines.<br><b>One scientific stack.</b></h2></div>
-        <p>AI 建立数据智能层，Simulation 建立物理与化学机理层；两者共同构成晶算量子的科研计算底座。</p>
-      </div>
-
-      <div class="engine-stage">
-        <a class="engine-panel ai-panel magnetic-card reveal" href="ai.html">
-          <canvas class="panel-canvas" data-scene="ai"></canvas>
-          <div class="panel-top"><span>01</span><b>INTELLIGENCE</b></div>
-          <div class="panel-main">
-            <small>AI PROJECTS</small>
-            <h3>AI 项目</h3>
-            <p>AI for Science、科研智能体、小样本建模、RAG、多模态科研数据与优化。</p>
-          </div>
-          <div class="panel-tags"><span>AI4S</span><span>Agent</span><span>Small-data ML</span></div>
-          <div class="panel-arrow">↗</div>
-        </a>
-
-        <a class="engine-panel sim-panel magnetic-card reveal" href="simulation.html">
-          <canvas class="panel-canvas" data-scene="sim"></canvas>
-          <div class="panel-top"><span>02</span><b>PHYSICS</b></div>
-          <div class="panel-main">
-            <small>COMPUTATIONAL SCIENCE</small>
-            <h3>计算模拟</h3>
-            <p>DFT、MD、AIMD、量子化学、COMSOL 与 Quantum-Classical R&D。</p>
-          </div>
-          <div class="panel-tags"><span>DFT / MD</span><span>QC</span><span>Multiphysics</span></div>
-          <div class="panel-arrow">↗</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="research-os">
-    <div class="shell os-shell">
-      <div class="os-sticky reveal">
-        <span class="section-code">03 / RESEARCH OS</span>
-        <h2>科研计算，<br><b>像一个操作系统。</b></h2>
-        <p>把问题定义、数据、AI、模拟、验证与解释组织成一条可以追踪、复核、迭代的链路。</p>
-      </div>
-
-      <div class="os-console reveal">
-        <div class="console-head">
-          <div class="traffic"><i></i><i></i><i></i></div>
-          <span>JQ / RESEARCH-OS</span>
-          <b>LIVE</b>
-        </div>
-        <div class="console-body">
-          <div class="console-nav">
-            <button class="console-tab active" data-target="question">01 / QUESTION</button>
-            <button class="console-tab" data-target="data">02 / DATA</button>
-            <button class="console-tab" data-target="compute">03 / COMPUTE</button>
-            <button class="console-tab" data-target="validate">04 / VALIDATE</button>
-            <button class="console-tab" data-target="insight">05 / INSIGHT</button>
-          </div>
-          <div class="console-screen">
-            <div class="console-panel active" data-panel="question">
-              <div class="terminal">
-                <span><i>01</i> define.scientific_question()</span>
-                <span><i>02</i> map.targets_constraints_variables()</span>
-                <span><i>03</i> select.ai_or_physics_path()</span>
-                <b>→ research problem structured</b>
-              </div>
-            </div>
-            <div class="console-panel" data-panel="data">
-              <div class="terminal">
-                <span><i>01</i> audit.dataset_and_structure()</span>
-                <span><i>02</i> construct.descriptors_or_models()</span>
-                <span><i>03</i> verify.data_quality()</span>
-                <b>→ scientific input ready</b>
-              </div>
-            </div>
-            <div class="console-panel" data-panel="compute">
-              <div class="terminal">
-                <span><i>01</i> run.ai_prediction()</span>
-                <span><i>02</i> run.multiscale_simulation()</span>
-                <span><i>03</i> integrate.data_and_mechanism()</span>
-                <b>→ evidence generated</b>
-              </div>
-            </div>
-            <div class="console-panel" data-panel="validate">
-              <div class="terminal">
-                <span><i>01</i> check.convergence()</span>
-                <span><i>02</i> compare.baseline_and_benchmark()</span>
-                <span><i>03</i> quantify.uncertainty()</span>
-                <b>→ quality control passed</b>
-              </div>
-            </div>
-            <div class="console-panel" data-panel="insight">
-              <div class="terminal">
-                <span><i>01</i> explain.key_factors()</span>
-                <span><i>02</i> assemble.figures_and_evidence()</span>
-                <span><i>03</i> return.scientific_insight()</span>
-                <b>→ answer ready</b>
-              </div>
-            </div>
-          </div>
-          <div class="console-status">
-            <div><small>MODE</small><strong>HYBRID</strong></div>
-            <div><small>STATUS</small><strong>ONLINE</strong></div>
-            <div><small>FOCUS</small><strong>SCIENCE</strong></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="stack-section">
-    <div class="shell">
-      <div class="section-head reveal">
-        <div><span class="section-code">04 / CAPABILITY STACK</span><h2>From data<br><b>to mechanism.</b></h2></div>
-      </div>
-      <div class="stack-table reveal">
-        <div class="stack-row"><b>AI</b><span>AI for Science</span><span>Scientific Agent</span><span>RAG / Knowledge</span><span>Multimodal</span></div>
-        <div class="stack-row"><b>SIM</b><span>DFT</span><span>MD / AIMD</span><span>Quantum Chemistry</span><span>COMSOL</span></div>
-        <div class="stack-row"><b>R&D</b><span>VQE</span><span>Quantum Circuit</span><span>QML</span><span>Hybrid Workflow</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="finale">
-    <canvas id="final-canvas" class="full-canvas" aria-hidden="true"></canvas>
-    <div class="shell finale-inner reveal">
-      <img src="assets/img/jingsuan-mark.png" alt="">
-      <span>JINGSUAN QUANTUM</span>
-      <h2>Build intelligence.<br><b>Compute reality.</b></h2>
-      <div class="hero-actions center">
-        <a class="btn primary magnetic" href="ai.html">AI Projects</a>
-        <a class="btn secondary magnetic" href="simulation.html">Simulation</a>
-      </div>
-    </div>
-  </section>
 </main>
 
-<footer class="footer">
-  <div class="shell footer-inner">
-    <div class="footer-brand">
-      <img src="assets/img/jingsuan-mark.png" alt="">
-      <div><b>合肥晶算量子科技有限公司</b><span>Hefei Jingsuan Quantum Technology Co., Ltd.</span></div>
+<footer class="footer-unified">
+  <div class="footer-unified-main">
+    <section class="footer-brand-block">
+      <div class="footer-brand-row">
+        <img src="assets/images/logo-mark.png" alt="合肥晶算量子标志">
+        <div><strong>合肥晶算量子科技有限公司</strong><small>Hefei Jingsuan Quantum Technology Co., Ltd.</small></div>
+      </div>
+      <h2>Quantum Computing & AI for Scientific Discovery</h2>
+      <p>面向材料、化学、能源与环境领域，连接量子计算、AI for Science 与多尺度计算。</p><p class="company-meta">统一社会信用代码：91340100MA8QMRPH71<br>地址：安徽省合肥市经济技术开发区<br>邮箱：<a href="mailto:jingsuanliangzi@163.com">jingsuanliangzi@163.com</a></p>
+    </section>
+    <nav class="footer-column">
+      <strong>服务导航</strong>
+      <a href="board/ai-projects.html">AI项目</a>
+      <a href="board/computational-simulation.html">计算模拟</a>
+    </nav>
+    <div class="footer-column">
+      <strong>核心方向</strong>
+      <span>AI for Science</span>
+      <span>科研智能体</span>
+      <span>DFT / MD / AIMD</span>
+      <span>量子化学 / COMSOL</span>
     </div>
-    <div class="footer-links"><a href="ai.html">AI项目</a><a href="simulation.html">计算模拟</a></div>
-    <div class="footer-copy">© <span data-year></span> Jingsuan Quantum</div>
+    <section class="footer-service-panel footer-service-panel-links">
+      <a href="board/ai-projects.html"><div><b>AI</b><small>项目与智能体</small></div></a>
+      <a href="board/computational-simulation.html"><div><b>SIM</b><small>多尺度计算</small></div></a>
+    </section>
+  </div>
+  <div class="footer-bottom-final">
+    <a class="footer-backtop" href="#top" aria-label="返回顶部">↑</a>
+    <div class="footer-bottom-inner"><span>jingsuanliangzi.com</span><span>Copyright 合肥晶算量子科技有限公司 All Rights Reserved</span></div>
   </div>
 </footer>
-<script src="assets/js/main.js"></script>
 
+
+<div class="project-contact-modal" id="projectContactModal" aria-hidden="true">
+  <div class="project-contact-backdrop" data-close-modal></div>
+  <div class="project-contact-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <button class="project-contact-close" type="button" aria-label="关闭" data-close-modal>×</button>
+    <div class="project-contact-grid">
+      <section class="project-contact-copy">
+        <span class="project-contact-kicker" id="projectModalCategory">PROJECT CONSULTATION</span>
+        <h3 id="projectModalTitle">项目咨询</h3>
+        <p id="projectModalDesc">请通过下方联系方式与晶算量子沟通项目需求，我们会结合研究方向与技术路线提供建议。</p>
+        <div class="project-contact-meta">
+          <div><strong>公司名称</strong><span>合肥晶算量子科技有限公司</span></div>
+          <div><strong>邮箱</strong><span><a href="mailto:jingsuanliangzi@163.com">jingsuanliangzi@163.com</a></span></div>
+          <div><strong>地址</strong><span>安徽省合肥市经济技术开发区</span></div>
+          <div><strong>统一社会信用代码</strong><span>91340100MA8QMRPH71</span></div>
+        </div>
+        <div class="project-contact-actions">
+          <a class="button modal-doc-button" id="projectModalDoc" href="customer-portal/templates/JSLZ-AI-Project-Requirement-Form.docx" download>下载对应 Word 需求表</a>
+          <a class="button button-outline modal-email-button" href="mailto:jingsuanliangzi@163.com">邮件咨询</a>
+        </div>
+      </section>
+      <aside class="project-contact-aside">
+        <div class="project-qr-shell">
+          <img src="assets/images/wechat-qr.png" alt="微信二维码">
+          <strong>扫码添加微信</strong>
+          <small>提交需求后可进一步沟通模型、任务与交付方式</small>
+          <em>Jingsuan Quantum</em>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/site.js"></script>
 </body>
 </html>
