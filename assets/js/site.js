@@ -40,3 +40,17 @@ document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().get
   modal.querySelectorAll('[data-close-modal]').forEach(el => el.addEventListener('click', closeModal));
   document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeModal(); });
 })();
+
+(function(){
+  const toggle = document.querySelector('.jsq-menu-toggle');
+  const nav = document.querySelector('.jsq-main-nav');
+  if(!toggle || !nav) return;
+  toggle.addEventListener('click',()=>{
+    const open = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded','false');
+  }));
+})();
